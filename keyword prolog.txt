@@ -1,0 +1,73 @@
+Nama	: Celine Aloyshima Haris
+NIM	: 1515015053
+Kelas	: B-2015
+Posttest Pertemuan 2
+
+--------------------------------------------------------------------------Keyword yg ada pada prolog------------------------------------------------------------------------------------
+
+1.	WRITE( )
+Syntax digunakan untuk mencetak variabel string yang diapit dengan petik tunggal ( ' ).
+2.	NL( )
+Atau newline merupakan perintah untuk pindah menuju baris yang baru.
+3.	READ( )
+Syntax ini digunakan untuk memberikan nilai inputan pada variabel yang diberikan di dalam tanda kurung.
+4.	IF 
+Pada visual Prolog memiliki struktur yang sama pada bahasa pemrograman pada umumnya, semua penulisannya sedikit membingungkan karena tidak seperti bahasa pemrograman lainnya, seperti java yang akhir dan awal statement menggunakan kurung kurawal, atau visual basic menggunakan then end if.
+5.	IF ELSE
+Jika salah satu kondisi ( kondisi teratas ) terpenuhi, maka kondisi teratas di eksekusi, kondisi dibawahnya tidak akan tereksekusi. Sedangkan Jika terdapat 2 atau lebih IF : Jika kondisi teratas terpenuhi akan di eksekusi, jika kondisi dibawah juga terpenuhi, maka kondisi kedua juga akan dieksekusi tidak berdasarkan kondisi diatasnya memenuhi kondisi atau tidak.
+6.	IF BERSARANG
+Jika kondisi (1) teratas terpenuhi, maka akan mengeksekusi kondisi (2) didalamnya lagi, dan jika kondisi didalamnya ke (3) terpenuhi juga, maka akan lanjut mengeksekusi, dan jika kondisi (1) sudah tidak terpenuhi, maka kondisi (2) dan (3)tidak akan dicocokkan kondisinya.
+7.	Domains
+Dalam Prolog, Domains sama seperti type dalam Pascal. Di bagian Domains, kita menyatakan jenis suatu variabel atau argumen.
+8.	Predicates
+Kita harus mendeklarasikan predikat yang ada pada bagian Predicates dan mendefinisikannya dalam bagian Clauses. Jika tidak, Prolog tidak akan mengenalnya. Namun untuk predikat standar seperti cursor, makewindow, readln, readchar dsb tidak perlu dideklarasikan. Deklarasi predicates dalam bagian predicates, harus disertai argumen jika memang berargumen. Nama predikat harus diawali dengan huruf, boleh besar atau kecil, selebihnya bisa huruf, angka, garis bawah, namun dianjurkan untuk dimulai dengan huruf kecil. Nama predikat tidak boleh mengandung spasi, tanda minus, asteris atau garis miring.
+9.	Clauses
+Sekumpulan klausa dari predikat yang sama harus disatukan (dikelompokkan) dalam bagian Clauses dan disebut presedur. Bila melakukan pemanggilan klausa atau matching, Prolog melacaknya dari atas ke bawah.
+10.	Facts
+Suatu kenyataan atau kebenaran yang diketahui, dan menyatakan relasi antara dua objek atau lebih. Fakta juga dapat berisi sifat suatu objek.
+11.	Rules
+Merupakan logika yang dirumuskan dalam bentuk relasi sebab akibat dan hubungan implikasi.
+12.	Atom
+Merupakan String, Digits dan ‘_’, dimulai dengan huruf kecil.
+13.	Number
+Merupakan bilangan integer dan real.
+14.	Variable
+Merupakan String, Digits dan ‘_’, dimulai dengan huruf besar.
+15.	Structure or Compound Item
+Merupakan gabungan sebuah Atom yang disebut functor dan Number dari argument. Cara penulisannya, functor yang diikuti argument-argument yang dipisah dengan tanda koma(,) dan diakhiri dengan tanda titik. Contohnya, suka( saya, rujak ).
+16.	Char
+Karakter tunggal diapit tanda kutip tunggal ‘a’, ‘b‘, ‘\58’.
+17.	Integer
+Bilangan bulat dari -327768 sampai 32767. Integer heksademisal diawali dengan tanda ($).
+18.	Real
+Bilangan real dari 1 x 10-307 sampai 1 x 10308. Jika integer diberikan pada argumen real maka akan langsung diubah ke real.
+19.	String
+Rentetan karakter yang diapit tanda kutip ganda seperti “Jalan Gerilya”. Panjang maksimum 255 karakter, sedangkan jika string tersebut dari file atau terkandung dalam program, bisa mencapai 64 Kb.
+20.	Symbol
+Rangkaian huruf, angka, dan garis bawah. Asalkan karakter pertama huruf kecil, tidak mengandung spasi/karakter khusus.
+21.	Goal
+Diketikkan langsung pada bagian ‘goal’ : di jendela dialog pada kompiler terpadu Turbo Prolog. dengan cara ini kita hanya bisa menjalankan program dari lingkungan kompiler Turbo Prolog. Untuk dapat dijalankan di lingkungan DOS kita harus menggunakan goal internal yang di simpan pada bagian Goal. Sebenarnya goal inilah yang dicari dan dipanggil pada saat program dijalankan. Jika goal tercapai, program berhenti dengan berhasil, tapi jika sebaliknya, program berhenti dalam keadaan gagal.
+22.	Comment
+Komentar  dengan baris jamak harus dimulai dengan karakter /* (slash, asterik) dan diakhiri dengan karakter */ (asterik, slash). Untuk memberikan komentar dengan baris tunggal dapat menggunakan karakter yang sama atau dapat dimulai dengan tanda persen (%).
+23.	Constants
+Konstanta simbolis dapat digunakan di program Visual Prolog. Untuk itu sebelumnya harus dideklarasikan terlebih dahulu. Deklarasi konstanta diakukan pada section constants.
+24.	Section Global
+Visual Prolog memperbolehkan untuk mendeklarasikan beberapa domain, predikat dan klausa menjadi global (daripada hanya lokal). Caranya dengan menset secara terpisah section global domains, global predicates, dan global facts pada bagian paling atas dari program.
+25.	Compiler Directives
+Visual Prolog mendukung compiler directives yang dapat ditambahkan ke badan program untuk memberitahukan ke komputer bagaimana secara spesifik memperlakukan kode-kode waktu di-compile. Untuk menset compiler directives sebagian besar dilakukan melalui menu Options | Project | Compiler Options.
+26.	Aritas jamak (multiple arity)
+Aritas (arity) suatu predikat adalah jumlah argumen yang ada pada predikat tersebut. Visual Prolog memperbolehkan kita mempunyai 2 atau lebih predikat dengan nama yang sama namun dengan aritas yang berbeda. Aritas yang berbeda dari nama predikat yang sama harus dikelompokkan bersama baik pada section predicates maupun pada section clauses.
+27.	Backtracking
+Visual Prolog menggunakan metode ini untuk menemukan suatu solusi dari permasalahan yang diberikan.Visual Prolog dalam memulai mencari solusi suatu permasalahan (atau goal) harus membuat keputusan di antara kemungkinan-kemungkinan yang ada. Ia menandai di setiap percabangan (dikenal dengan titik lacak balik) dan memilih subgoal pertama untuk telusuri. Jika subgoal tersebut gagal (ekivalen dengan menemukan jalan buntu), Visual Prolog akan lacakbalik ke titik lacakbalik (back-tracking point) terakhir dan mencoba alternatif subgoal yang lain.
+28.	Fail
+Visual Prolog menyediakan predikat khusus fail untuk memaksa kegagalan sehingga memicu terjadinya lacakbalik. Efek dari fail sama dengan efek memberikan perbandingan 2=3 atau subgoal yang tidak mungkin (impossible) lainnya.
+29.	Cut (!)
+Visual Prolog memiliki cut yang digunakan untuk mencegah lacakbalik, ditulis berupa sebuah tanda seru (!). Efek dari cut adalah sederhana, yaitu tidak akan memungkinkan terjadinya lacakbalik melewati sebuah cut. Kita menempatkan cut dalam program sama persis seperti menempatkan sebuah subgoal pada body dari suatu rule. Ketika proses melewati cut, pemanggil ke cut dinyatakan sukses dan subgoal berikutnya (jika ada) dipanggil. Sekali sebuah cut dilewati, adalah menjadi tidak mungkin untuk melakukan lacakbalik pada subgoal yang berada pada sebelum cut pada klausa yang sedang diproses dan adalah menjadi tidak mungkin untuk melakukan lacakbalik ke predikat lain yang mendefinisikan predikat yang sekarang diproses (predikat yang mengandung cut).
+30.	Nondeterm
+Kata nondeterm pada section predicates berfungsi untuk memberi tahu compiler bahwa predikat tersebut mempunyai lebih dari satu kemungkinan jawaban (non-deterministik).
+31.	implement
+Keyword ini merupakan satu – satunya kunci yang berpasangan visual prolog memperlakukan kode yang ada di antara dua kata kunci ini sebagai kode yang dimiliki oleh sebuah kelas nama kelas di munculkan setelah keyword implement.
+32.	end implement
+keyword ini merupakan pasangan dari keyword implement yang digunakan pada akhir sintaks dengan awalan implement.
+33.	open
+Keyword ini digunakan untuk memperluas jangkauan penlihatan dari sebuah kelas. Ini digunakan setelah keyword implement.
